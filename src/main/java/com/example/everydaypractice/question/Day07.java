@@ -13,10 +13,10 @@ import java.util.*;
  *      给你一个字符串text，你需要使用text中的字母来拼凑尽可能多的单词"balloon"。
  * 2.限制：
  *      字符串text中每个字母只能被使用一次
- * 2.示例：
+ * 3.示例：
  *      输入："loonbalxballpoon"
  *      输出：2
- * 3.参考：https://leetcode-cn.com/problems/maximum-number-of-balloons/
+ * 4.参考：https://leetcode-cn.com/problems/maximum-number-of-balloons/
  */
 
 public class Day07 {
