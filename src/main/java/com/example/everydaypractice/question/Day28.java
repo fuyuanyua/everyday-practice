@@ -8,6 +8,14 @@ import java.util.Map;
  * @Description: Day28
  * @Author: lhb
  * @Date: 2021/8/3 下午4:24
+ *
+ * 1.说明：
+ *      数组中一个数字出现的次数超过数组长度的一般。请找出这个数字
+ * 2.限制：
+ *      数组非空
+ * 3.示例：
+ *      输入：[1, 2, 3, 2, 2, 2, 5, 4, 2]
+ *      输出：2
  */
 
 public class Day28 {
@@ -16,19 +24,12 @@ public class Day28 {
      * 解法1：
      *      思路：先对数组升序排序，因为数字出现次数超过数组长度一半，那么排序后数组中间的数字必定是目标数字
      *      时间复杂度：排序的时间复杂度O(nlogn)
-     *      空间复杂度：O(n)
+     *      空间复杂度：O(1)
      * @param nums
      * @return
      */
     public static int solution1(int[] nums) {
-        if (nums == null) {
-            return 0;
-        }
-
         int length = nums.length;
-        if (length == 0) {
-            return 0;
-        }
 
         Arrays.sort(nums);
         int mid = (0 + (length - 1)) / 2;
@@ -46,14 +47,7 @@ public class Day28 {
      * @return
      */
     public static int solution2(int[] nums) {
-        if (nums == null) {
-            return 0;
-        }
-
         int length = nums.length;
-        if (length == 0) {
-            return 0;
-        }
 
         int half = nums.length / 2;
         Map<Integer, Integer> map = new HashMap<>(length);
@@ -66,5 +60,4 @@ public class Day28 {
 
         return 0;
     }
-
 }
