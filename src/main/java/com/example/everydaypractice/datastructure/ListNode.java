@@ -1,7 +1,7 @@
 package com.example.everydaypractice.datastructure;
 
-import lombok.Data;
-import lombok.experimental.Accessors;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * @Description: 定义一个单向链表节点
@@ -9,7 +9,8 @@ import lombok.experimental.Accessors;
  * @Date: 2021/7/13 下午6:28
  */
 
-@Data
+@Getter
+@Setter
 public class ListNode {
 
     /**
