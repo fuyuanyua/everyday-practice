@@ -55,6 +55,12 @@ public class Hot008 {
         if (nums == null || nums.length == 0) {
             return;
         }
+        if (index1 >= nums.length || index1 < 0) {
+            throw new IndexOutOfBoundsException();
+        }
+        if (index2 >= nums.length || index2 < 0) {
+            throw new IndexOutOfBoundsException();
+        }
         int temp = nums[index1];
         nums[index1] = nums[index2];
         nums[index2] = temp;
