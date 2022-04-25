@@ -7,6 +7,8 @@ import java.util.Map;
  * @Description: 手写一个数据结构，实现LRU算法（最近最少使用）
  * @Author: lhb
  * @Date: 2022/4/25 22:15
+ *
+ * https://leetcode-cn.com/problems/lru-cache/
  */
 
 public class LruCache {
@@ -31,6 +33,9 @@ public class LruCache {
         }
     }
 
+    /**
+     * 借助一个map，实现O(1)时间复杂度get和put
+     */
     private Map<Integer, Node> cache;
 
     /**
